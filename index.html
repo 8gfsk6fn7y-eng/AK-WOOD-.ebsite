@@ -1,15 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>AK WOOD | Custom Woodworking</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>Welcome</h1>
-      <p>This is my website.</p>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">AK WOOD</a>
+        <nav class="site-nav" aria-label="Main Navigation">
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <button id="lang-toggle" class="lang-toggle" type="button">CZ</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="heroEyebrow">Custom Craftsmanship</p>
+            <h1 data-i18n="heroTitle">
+              Handbuilt woodwork made to last for generations.
+            </h1>
+            <p class="lead" data-i18n="heroLead">
+              AK WOOD designs and builds custom furniture, cabinetry, and
+              interior wood features with premium materials and precise joinery.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact" data-i18n="heroCta1"
+                >Request a Quote</a
+              >
+              <a class="btn btn-secondary" href="#work" data-i18n="heroCta2"
+                >View Projects</a
+              >
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Business Highlights">
+            <h2 data-i18n="heroCardTitle">Why Clients Choose AK WOOD</h2>
+            <ul>
+              <li data-i18n="heroPoint1">
+                Built-to-order designs for your exact space
+              </li>
+              <li data-i18n="heroPoint2">
+                Solid hardwoods and durable finishes
+              </li>
+              <li data-i18n="heroPoint3">
+                Clear timelines and transparent pricing
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <p class="eyebrow" data-i18n="servicesEyebrow">Services</p>
+          <h2 data-i18n="servicesTitle">What We Build</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 data-i18n="service1Title">Custom Cabinets</h3>
+              <p data-i18n="service1Text">
+                Built-in and freestanding cabinets made to fit your space and
+                storage needs.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="service2Title">Custom Kitchens</h3>
+              <p data-i18n="service2Text">
+                Complete kitchen solutions, from design support to handmade
+                cabinet production.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="service3Title">Custom Furniture</h3>
+              <p data-i18n="service3Text">
+                Tables, wardrobes, shelving, and one-off pieces, plus other
+                custom woodwork by request.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section-alt">
+        <div class="container">
+          <p class="eyebrow" data-i18n="workEyebrow">Selected Work</p>
+          <h2 data-i18n="workTitle">Recent Projects</h2>
+          <div class="project-grid">
+            <article class="project">
+              <h3 data-i18n="project1Title">White Oak Dining Table</h3>
+              <p data-i18n="project1Text">
+                8-seat table with hand-rubbed finish and tapered legs.
+              </p>
+            </article>
+            <article class="project">
+              <h3 data-i18n="project2Title">Entryway Built-In</h3>
+              <p data-i18n="project2Text">
+                Bench, hooks, and hidden shoe storage for a busy family home.
+              </p>
+            </article>
+            <article class="project">
+              <h3 data-i18n="project3Title">Walnut Floating Shelves</h3>
+              <p data-i18n="project3Text">
+                Minimal shelf system designed for a modern office interior.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow" data-i18n="aboutEyebrow">About AK WOOD</p>
+            <h2 data-i18n="aboutTitle">
+              Built with care, from first sketch to final install.
+            </h2>
+            <p data-i18n="aboutText">
+              Every project starts with understanding how you live in your
+              space. From there, AK WOOD develops a practical design, selects
+              quality lumber, and handcrafts each piece for long-term strength
+              and everyday use.
+            </p>
+          </div>
+          <div class="process">
+            <h3 data-i18n="processTitle">Our Process</h3>
+            <ol>
+              <li data-i18n="process1">Consultation and measurements</li>
+              <li data-i18n="process2">
+                Design proposal and material selection
+              </li>
+              <li data-i18n="process3">
+                Build, finish, and final installation
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Start Your Project</h2>
+          <p data-i18n="contactText">
+            Tell us what you need, and we will follow up with next steps and an
+            estimated timeline.
+          </p>
+          <p data-i18n="contactCity">Location: Prague</p>
+          <div class="hero-actions contact-actions">
+            <a class="btn btn-primary" href="mailto:ad.krejcir@gmail.com"
+              >ad.krejcir@gmail.com</a
+            >
+            <a class="btn btn-secondary" href="tel:+420773565100"
+              >+420 773 565 100</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-i18n="footerText">
+          &copy; 2026 AK WOOD s.r.o.
+        </p>
+      </div>
+    </footer>
+    <script>
+      const translations = {
+        en: {
+          pageTitle: "AK WOOD | Custom Woodworking",
+          navServices: "Services",
+          navWork: "Work",
+          navAbout: "About",
+          navContact: "Contact",
+          heroEyebrow: "Custom Craftsmanship",
+          heroTitle: "Handbuilt woodwork made to last for generations.",
+          heroLead:
+            "AK WOOD in Prague designs and builds custom cabinets, custom kitchens, custom furniture, and other woodwork tailored to your needs.",
+          heroCta1: "Request a Quote",
+          heroCta2: "View Projects",
+          heroCardTitle: "Why Clients Choose AK WOOD",
+          heroPoint1: "Built-to-order designs for your exact space",
+          heroPoint2: "Solid hardwoods and durable finishes",
+          heroPoint3: "Clear timelines and transparent pricing",
+          servicesEyebrow: "Services",
+          servicesTitle: "What We Build",
+          service1Title: "Custom Cabinets",
+          service1Text:
+            "Built-in and freestanding cabinets made to fit your space and storage needs.",
+          service2Title: "Custom Kitchens",
+          service2Text:
+            "Complete kitchen solutions, from design support to handmade cabinet production.",
+          service3Title: "Custom Furniture",
+          service3Text:
+            "Tables, wardrobes, shelving, and one-off pieces, plus other custom woodwork by request.",
+          workEyebrow: "Selected Work",
+          workTitle: "Recent Projects",
+          project1Title: "White Oak Dining Table",
+          project1Text: "8-seat table with hand-rubbed finish and tapered legs.",
+          project2Title: "Entryway Built-In",
+          project2Text:
+            "Bench, hooks, and hidden shoe storage for a busy family home.",
+          project3Title: "Walnut Floating Shelves",
+          project3Text:
+            "Minimal shelf system designed for a modern office interior.",
+          aboutEyebrow: "About AK WOOD",
+          aboutTitle: "Built with care, from first sketch to final install.",
+          aboutText:
+            "Every project starts with understanding how you live in your space. From there, AK WOOD develops a practical design, selects quality lumber, and handcrafts each piece for long-term strength and everyday use.",
+          processTitle: "Our Process",
+          process1: "Consultation and measurements",
+          process2: "Design proposal and material selection",
+          process3: "Build, finish, and final installation",
+          contactEyebrow: "Contact",
+          contactTitle: "Start Your Project",
+          contactText:
+            "Tell us what you need, and we will follow up with next steps and an estimated timeline.",
+          contactCity: "Location: Prague",
+          footerText: "\u00a9 2026 AK WOOD s.r.o."
+        },
+        cs: {
+          pageTitle: "AK WOOD | Zak\u00e1zkov\u00e9 truhl\u00e1\u0159stv\u00ed",
+          navServices: "Slu\u017eby",
+          navWork: "Realizace",
+          navAbout: "O n\u00e1s",
+          navContact: "Kontakt",
+          heroEyebrow: "Poctiv\u00e9 truhl\u00e1\u0159stv\u00ed",
+          heroTitle:
+            "Ru\u010dn\u011b vyr\u00e1b\u011bn\u00e9 d\u0159evo, kter\u00e9 vydr\u017e\u00ed po generace.",
+          heroLead:
+            "AK WOOD v Praze navrhuje a vyr\u00e1b\u00ed kuchyn\u011b na m\u00edru, sk\u0159\u00edn\u011b na m\u00edru, n\u00e1bytek na m\u00edru i dal\u0161\u00ed truhl\u00e1\u0159sk\u00e9 realizace ze d\u0159eva.",
+          heroCta1: "Nez\u00e1vazn\u00e1 popt\u00e1vka",
+          heroCta2: "Zobrazit realizace",
+          heroCardTitle: "Pro\u010d si klienti vyb\u00edraj\u00ed AK WOOD",
+          heroPoint1: "N\u00e1vrh na m\u00edru p\u0159esn\u011b podle va\u0161eho prostoru",
+          heroPoint2: "Masivn\u00ed d\u0159evo a odoln\u00e9 povrchov\u00e9 \u00fapravy",
+          heroPoint3: "Jasn\u00e9 term\u00edny a transparentn\u00ed cena",
+          servicesEyebrow: "Slu\u017eby",
+          servicesTitle: "Co vyr\u00e1b\u00edme",
+          service1Title: "Sk\u0159\u00edn\u011b na m\u00edru",
+          service1Text:
+            "Vestav\u011bn\u00e9 i voln\u011b stoj\u00edc\u00ed sk\u0159\u00edn\u011b navr\u017een\u00e9 p\u0159esn\u011b podle prostoru a pot\u0159eb.",
+          service2Title: "Kuchyn\u011b na m\u00edru",
+          service2Text:
+            "Kompletn\u00ed \u0159e\u0161en\u00ed kuchyn\u00ed od n\u00e1vrhu po ru\u010dn\u011b vyr\u00e1b\u011bn\u00e9 sk\u0159\u00ed\u0148ky.",
+          service3Title: "N\u00e1bytek na m\u00edru",
+          service3Text:
+            "Stoly, sk\u0159\u00edn\u011b, police i origin\u00e1ln\u00ed kusy, plus dal\u0161\u00ed pr\u00e1ce se d\u0159evem podle domluvy.",
+          workEyebrow: "Vybran\u00e9 realizace",
+          workTitle: "Posledn\u00ed projekty",
+          project1Title: "J\u00eddeln\u00ed st\u016fl z b\u00edl\u00e9ho dubu",
+          project1Text:
+            "St\u016fl pro 8 osob s ru\u010dn\u011b nan\u00e1\u0161enou povrchovou \u00fapravou a z\u00fa\u017een\u00fdmi nohami.",
+          project2Title: "Vestavba do vstupn\u00ed haly",
+          project2Text:
+            "Lavice, v\u011b\u0161\u00e1ky a skryt\u00fd botn\u00edk pro praktick\u00e9 rodinn\u00e9 pou\u017eit\u00ed.",
+          project3Title: "Plovouc\u00ed police z o\u0159echu",
+          project3Text:
+            "Minimalistick\u00fd policov\u00fd syst\u00e9m navr\u017een\u00fd do modern\u00ed kancel\u00e1\u0159e.",
+          aboutEyebrow: "O AK WOOD",
+          aboutTitle:
+            "Ka\u017ed\u00fd projekt tvo\u0159\u00edme pe\u010dliv\u011b od n\u00e1vrhu a\u017e po mont\u00e1\u017e.",
+          aboutText:
+            "Ka\u017ed\u00e1 realizace za\u010d\u00edn\u00e1 pochopen\u00edm va\u0161eho prostoru a pot\u0159eb. N\u00e1sledn\u011b navrhneme \u0159e\u0161en\u00ed, vybereme vhodn\u00e9 d\u0159evo a v\u0161e vyrob\u00edme s d\u016frazem na detail a dlouhou \u017eivotnost.",
+          processTitle: "Jak pracujeme",
+          process1: "Konzultace a zam\u011b\u0159en\u00ed",
+          process2: "N\u00e1vrh a v\u00fdb\u011br materi\u00e1lu",
+          process3: "V\u00fdroba, povrchov\u00e1 \u00faprava a mont\u00e1\u017e",
+          contactEyebrow: "Kontakt",
+          contactTitle: "Za\u010dn\u011bme v\u00e1\u0161 projekt",
+          contactText:
+            "Napi\u0161te n\u00e1m, co pot\u0159ebujete, a ozveme se v\u00e1m s dal\u0161\u00edm postupem i orienta\u010dn\u00edm term\u00ednem.",
+          contactCity: "P\u016fsob\u00edme: Praha",
+          footerText: "\u00a9 2026 AK WOOD s.r.o."
+        }
+      };
+
+      const toggleButton = document.getElementById("lang-toggle");
+      const translatableNodes = document.querySelectorAll("[data-i18n]");
+
+      function applyLanguage(language) {
+        translatableNodes.forEach((node) => {
+          const key = node.dataset.i18n;
+          if (translations[language][key]) {
+            node.textContent = translations[language][key];
+          }
+        });
+        document.title = translations[language].pageTitle;
+        document.documentElement.lang = language === "cs" ? "cs" : "en";
+        toggleButton.textContent = language === "cs" ? "EN" : "CZ";
+        localStorage.setItem("akwood-language", language);
+      }
+
+      const savedLanguage = localStorage.getItem("akwood-language") || "cs";
+      applyLanguage(savedLanguage);
+
+      toggleButton.addEventListener("click", () => {
+        const current = document.documentElement.lang === "cs" ? "cs" : "en";
+        const nextLanguage = current === "en" ? "cs" : "en";
+        applyLanguage(nextLanguage);
+      });
+    </script>
   </body>
 </html>
