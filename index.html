@@ -5,15 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Zakázkový nábytek na míru v Praze. Vestavné skříně, kuchyně a interiérové prvky vyrobené s důrazem na detail, kvalitní materiály a precizní řemeslné zpracování."
+      content="AK WOOD je truhlářský atelier v Praze zaměřený na zakázkový nábytek, vestavěné skříně a interiérové prvky s důrazem na detail a kvalitní materiály."
     />
-    <title>AK WOOD | Nábytek na míru Praha</title>
+    <title>AK WOOD – zakázkový nábytek Praha | truhlářský atelier</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AK WOOD s.r.o.",
+        "image": "/assets/logo/ak-wood-logo.svg",
+        "url": "https://your-domain.cz",
+        "telephone": "+420773565100",
+        "email": "ad.krejcir@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Praha",
+          "addressCountry": "CZ"
+        },
+        "areaServed": "Prague",
+        "founder": {
+          "@type": "Person",
+          "name": "Adam Krejčíř"
+        },
+        "sameAs": ["https://www.instagram.com/akwood.cz/"]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="logo" href="#home">AK WOOD</a>
+        <a class="logo site-logo" href="#home" aria-label="AK WOOD home">
+          <img src="assets/logo/ak-wood-logo.svg" alt="AK WOOD logo" />
+        </a>
         <nav class="site-nav" aria-label="Main Navigation">
           <a href="#services" data-i18n="navServices">Services</a>
           <a href="#work" data-i18n="navWork">Portfolio</a>
@@ -37,6 +62,10 @@
               AK WOOD is led by Adam Krejčíř. Every project is designed,
               produced and installed with care.
             </p>
+            <p class="hero-practical" data-i18n="heroPractical">
+              Prague and surrounding area · design consultation, production,
+              installation
+            </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact" data-i18n="heroCta1"
                 >Project Inquiry</a
@@ -46,21 +75,6 @@
               >
             </div>
           </div>
-          <aside class="hero-card" aria-label="Business Highlights">
-            <h2 data-i18n="heroCardTitle">How We Work</h2>
-            <ul>
-              <li data-i18n="heroPoint1">
-                Design consultation, custom production, professional
-                installation
-              </li>
-              <li data-i18n="heroPoint2">
-                Attention to detail and clean execution
-              </li>
-              <li data-i18n="heroPoint3">
-                Custom quote based on scope and materials
-              </li>
-            </ul>
-          </aside>
         </div>
       </section>
 
@@ -129,37 +143,44 @@
           <p class="eyebrow" data-i18n="workEyebrow">Selected Work</p>
           <h2 data-i18n="workTitle">Portfolio Projects</h2>
           <div class="project-grid">
-            <article class="project featured">
-              <div class="project-media">
+            <article class="project">
+              <div class="project-media project-media--double">
                 <img
                   class="project-photo"
                   src="assets/portfolio/wardrobe-bedroom-1.jpg"
-                  alt="Built-in oak veneer wardrobes fitted into bedroom niches in Prague 10"
-                  loading="lazy"
+                  alt="Vestavěná skříň do ložnice – dubová dýha, Praha"
+                  onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
+                />
+                <img
+                  class="project-photo"
+                  src="assets/portfolio/wardrobe-bedroom-2.jpg"
+                  alt="Vestavěné skříně do ložnice – detail zakázkového provedení"
                   onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
                 />
                 <div class="project-photo-fallback" aria-hidden="true">
                   Portfolio image unavailable
                 </div>
               </div>
-              <h3 data-i18n="project1Title">Built-in Bedroom Wardrobes</h3>
-              <p data-i18n="project1Text">
-                Two built-in wardrobes designed for niches in a newly built
-                apartment. The project focused on efficient use of space, clean
-                design and quality materials.
-              </p>
-              <p class="project-meta" data-i18n="project1Meta">
-                Location: Prague 10<br />
-                Year: 2025<br />
-                Materials: Oak veneer, Egger laminated board
-              </p>
+              <div class="project-body">
+                <p class="project-label" data-i18n="project1Label">Project 01</p>
+                <h3 data-i18n="project1Title">Built-in Bedroom Wardrobes</h3>
+                <p data-i18n="project1Text">
+                  Two built-in wardrobes designed for niches in a newly built
+                  apartment. The project focused on efficient use of space, clean
+                  design and quality materials.
+                </p>
+                <p class="project-meta" data-i18n="project1Meta">
+                  Prague 10 · 2025<br />
+                  Oak veneer · Egger laminated board
+                </p>
+              </div>
             </article>
             <article class="project">
               <div class="project-media">
                 <img
                   class="project-photo"
                   src="assets/portfolio/tomas_schod.jpg"
-                  alt="Custom solid oak step with integrated shoe storage for a tiny house in Jevany"
+                  alt="Dubový schod do maringotky – zakázková výroba"
                   loading="lazy"
                   onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
                 />
@@ -167,24 +188,26 @@
                   Portfolio image unavailable
                 </div>
               </div>
-              <h3 data-i18n="project2Title">Oak Step for a Tiny House</h3>
-              <p data-i18n="project2Text">
-                Custom oak step built for a newly installed tiny house located
-                on the edge of a forest. The step includes integrated storage
-                space for shoes.
-              </p>
-              <p class="project-meta" data-i18n="project2Meta">
-                Location: Jevany<br />
-                Year: 2026<br />
-                Materials: Solid oak panel 28 mm, spruce bioboard 19 mm
-              </p>
+              <div class="project-body">
+                <p class="project-label" data-i18n="project2Label">Project 02</p>
+                <h3 data-i18n="project2Title">Oak Step for a Tiny House</h3>
+                <p data-i18n="project2Text">
+                  Custom oak step built for a newly installed tiny house located
+                  on the edge of a forest. The step includes integrated storage
+                  space for shoes.
+                </p>
+                <p class="project-meta" data-i18n="project2Meta">
+                  Jevany · 2026<br />
+                  Solid oak panel 28 mm · Spruce bioboard 19 mm
+                </p>
+              </div>
             </article>
             <article class="project">
               <div class="project-media">
                 <img
                   class="project-photo"
                   src="assets/portfolio/CKP-1.jpg"
-                  alt="Staff wardrobe with lockable doors made for a physiotherapy center in Prague Vrsovice"
+                  alt="Šatní skříň pro fyzioterapeutické centrum – lamino Egger"
                   loading="lazy"
                   onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
                 />
@@ -192,52 +215,21 @@
                   Portfolio image unavailable
                 </div>
               </div>
-              <h3 data-i18n="project3Title">
-                Staff Wardrobe for Physiotherapy Center
-              </h3>
-              <p data-i18n="project3Text">
-                Custom wardrobe designed to match the existing furniture in a
-                physiotherapy center. The lockers are intended for staff and
-                include lockable doors.
-              </p>
-              <p class="project-meta" data-i18n="project3Meta">
-                Location: Prague - Vršovice<br />
-                Year: 2026<br />
-                Materials: Egger laminated board, Blum hardware
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section testimonials">
-        <div class="container">
-          <p class="eyebrow" data-i18n="testimonialsEyebrow">Client References</p>
-          <h2 data-i18n="testimonialsTitle">Client References</h2>
-          <div class="testimonial-grid">
-            <article class="testimonial">
-              <p data-i18n="testimonial1Text">
-                "Excellent craftsmanship and smooth communication throughout the project."
-              </p>
-              <p class="testimonial-author" data-i18n="testimonial1Author">
-                - Client, Prague
-              </p>
-            </article>
-            <article class="testimonial">
-              <p data-i18n="testimonial2Text">
-                "Precise execution, clean installation and a calm, professional approach."
-              </p>
-              <p class="testimonial-author" data-i18n="testimonial2Author">
-                - Client, Prague
-              </p>
-            </article>
-            <article class="testimonial">
-              <p data-i18n="testimonial3Text">
-                "The result fits our interior perfectly and the quality is excellent."
-              </p>
-              <p class="testimonial-author" data-i18n="testimonial3Author">
-                - Client, Prague
-              </p>
+              <div class="project-body">
+                <p class="project-label" data-i18n="project3Label">Project 03</p>
+                <h3 data-i18n="project3Title">
+                  Staff Wardrobe for Physiotherapy Center
+                </h3>
+                <p data-i18n="project3Text">
+                  Custom wardrobe designed to match the existing furniture in a
+                  physiotherapy center. The lockers are intended for staff and
+                  include lockable doors.
+                </p>
+                <p class="project-meta" data-i18n="project3Meta">
+                  Prague - Vršovice · 2026<br />
+                  Egger laminated board · Blum hardware
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -276,17 +268,14 @@
         </div>
       </section>
 
-      <section class="section section-alt">
+      <section class="section qualification">
         <div class="container">
-          <p class="eyebrow" data-i18n="valuesEyebrow">Values</p>
-          <h2 data-i18n="valuesTitle">How We Approach Every Project</h2>
-          <div class="cards">
-            <article class="card"><h3 data-i18n="value1">Attention to detail</h3></article>
-            <article class="card"><h3 data-i18n="value2">Quality materials</h3></article>
-            <article class="card"><h3 data-i18n="value3">Clean execution</h3></article>
-            <article class="card"><h3 data-i18n="value4">Reliable communication</h3></article>
-            <article class="card"><h3 data-i18n="value5">Long-term durability</h3></article>
-          </div>
+          <h2 data-i18n="fitTitle">Who custom production is for</h2>
+          <p data-i18n="fitText">
+            Custom production is ideal for clients looking for furniture
+            tailored to a specific space, quality materials and long-term
+            durability.
+          </p>
         </div>
       </section>
 
@@ -310,7 +299,18 @@
             <a class="btn btn-secondary" href="mailto:ad.krejcir@gmail.com"
               >ad.krejcir@gmail.com</a
             >
+            <a
+              class="btn btn-secondary btn-instagram"
+              href="https://www.instagram.com/akwood.cz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
           </div>
+          <p class="contact-helper" data-i18n="contactHelper">
+            Briefly describe your project and, if possible, include dimensions,
+            inspiration or photos of the space.
+          </p>
           <form id="contact-form" class="contact-form" novalidate>
             <label for="name" data-i18n="formNameLabel">Name</label>
             <input id="name" name="name" type="text" required data-i18n-placeholder="formNamePlaceholder" placeholder="Your name" />
@@ -330,15 +330,21 @@
 
     <footer class="site-footer">
       <div class="container">
+        <a class="footer-logo" href="#home" aria-label="AK WOOD home">
+          <img src="assets/logo/ak-wood-logo.svg" alt="AK WOOD logo" />
+        </a>
         <p data-i18n="footerText">
           &copy; 2026 AK WOOD s.r.o.
         </p>
       </div>
     </footer>
+    <div id="lightbox">
+      <img id="lightbox-img" alt="Expanded project preview" />
+    </div>
     <script>
       const translations = {
         en: {
-          pageTitle: "AK WOOD | Bespoke Furniture Prague",
+          pageTitle: "AK WOOD – zakázkový nábytek Praha | truhlářský atelier",
           navServices: "Services",
           navWork: "Portfolio",
           navAbout: "About",
@@ -348,13 +354,10 @@
             "Bespoke furniture atelier in Prague. Craftsmanship, precision and quality materials.",
           heroLead:
             "AK WOOD is led by Adam Krejčíř. Every project is designed, produced and installed with care.",
+          heroPractical:
+            "Prague and surrounding area · design consultation, production, installation",
           heroCta1: "Project inquiry",
           heroCta2: "View projects",
-          heroCardTitle: "How We Work",
-          heroPoint1:
-            "Design consultation, custom production, professional installation",
-          heroPoint2: "Attention to detail and clean execution",
-          heroPoint3: "Custom quote based on scope and materials",
           servicesEyebrow: "Services",
           servicesTitle: "What We Offer",
           service1Title: "Custom furniture",
@@ -381,28 +384,31 @@
             "Custom quote based on project scope and materials.",
           workEyebrow: "Portfolio",
           workTitle: "Selected Projects",
+          project1Label: "Project 01",
           project1Title: "Built-in Bedroom Wardrobes",
           project1Text:
             "Two built-in wardrobes designed for niches in a newly built apartment. The project focused on efficient use of space, clean design and quality materials.",
           project1Meta:
-            "Location: Prague 10<br />Year: 2025<br />Materials: Oak veneer, Egger laminated board",
+            "Prague 10 · 2025<br />Oak veneer · Egger laminated board",
           project2Title: "Oak Step for a Tiny House",
+          project2Label: "Project 02",
           project2Text:
             "Custom oak step built for a newly installed tiny house located on the edge of a forest. The step includes integrated storage space for shoes.",
           project2Meta:
-            "Location: Jevany<br />Year: 2026<br />Materials: Solid oak panel 28 mm, spruce bioboard 19 mm",
+            "Jevany · 2026<br />Solid oak panel 28 mm · Spruce bioboard 19 mm",
           project3Title: "Staff Wardrobe for Physiotherapy Center",
+          project3Label: "Project 03",
           project3Text:
             "Custom wardrobe designed to match the existing furniture in a physiotherapy center. The lockers are intended for staff and include lockable doors.",
           project3Meta:
-            "Location: Prague - Vršovice<br />Year: 2026<br />Materials: Egger laminated board, Blum hardware",
+            "Prague - Vršovice · 2026<br />Egger laminated board · Blum hardware",
           aboutEyebrow: "About",
           aboutTitle:
             "AK WOOD is a custom woodworking atelier based in Prague focused on bespoke furniture and interior elements.",
           aboutText:
             "Each project is approached individually with attention to detail, materials and long-term functionality. From the first consultation to the final installation, the work is handled personally by Adam Krejčíř to ensure quality and precision.",
           aboutFounder: "AK WOOD is founded and operated by Adam Krejčíř.",
-          processTitle: "Process",
+          processTitle: "How the collaboration works",
           process1:
             "Consultation and measurement - Initial meeting to understand the space, requirements and possibilities of the project.",
           process2:
@@ -411,24 +417,9 @@
             "Production - Precise production with emphasis on craftsmanship and material quality.",
           process4:
             "Installation - Professional installation and final adjustments directly on site.",
-          testimonialsEyebrow: "Client References",
-          testimonialsTitle: "Client References",
-          testimonial1Text:
-            '"Excellent craftsmanship and smooth communication throughout the project."',
-          testimonial1Author: "- Client, Prague",
-          testimonial2Text:
-            '"Precise execution, clean installation and a calm, professional approach."',
-          testimonial2Author: "- Client, Prague",
-          testimonial3Text:
-            '"The result fits our interior perfectly and the quality is excellent."',
-          testimonial3Author: "- Client, Prague",
-          valuesEyebrow: "Values",
-          valuesTitle: "How We Approach Every Project",
-          value1: "Attention to detail",
-          value2: "Quality materials",
-          value3: "Clean execution",
-          value4: "Reliable communication",
-          value5: "Long-term durability",
+          fitTitle: "Who custom production is for",
+          fitText:
+            "Custom production is ideal for clients looking for furniture tailored to a specific space, quality materials and long-term durability.",
           contactEyebrow: "Contact",
           contactTitle: "Contact / Project Inquiry",
           contactText:
@@ -436,6 +427,8 @@
           contactCity: "Prague and surrounding area (Czech Republic)",
           contactPerson: "Adam Krejčíř (Owner) · AK WOOD s.r.o.",
           contactHours: "Monday - Friday · 8:00 - 17:00",
+          contactHelper:
+            "Briefly describe your project and, if possible, include dimensions, inspiration or photos of the space.",
           formNameLabel: "Name",
           formNamePlaceholder: "Your name",
           formEmailLabel: "Email",
@@ -449,7 +442,7 @@
           footerText: "\u00a9 2026 AK WOOD s.r.o."
         },
         cs: {
-          pageTitle: "AK WOOD | Nábytek na míru Praha",
+          pageTitle: "AK WOOD – zakázkový nábytek Praha | truhlářský atelier",
           navServices: "Služby",
           navWork: "Portfolio",
           navAbout: "O ateliéru",
@@ -459,12 +452,9 @@
             "Truhlářský atelier v Praze. Zakázkový nábytek s důrazem na detail a kvalitní materiály.",
           heroLead:
             "AK WOOD vede Adam Krejčíř. Každý projekt řešíme od návrhu přes výrobu až po montáž.",
+          heroPractical: "Praha a okolí · konzultace, výroba, montáž",
           heroCta1: "Nezávazná poptávka",
           heroCta2: "Zobrazit projekty",
-          heroCardTitle: "Jak pracujeme",
-          heroPoint1: "Konzultace návrhu, zakázková výroba, profesionální montáž",
-          heroPoint2: "Důraz na detail a čisté provedení",
-          heroPoint3: "Cena individuálně podle rozsahu a materiálů",
           servicesEyebrow: "Služby",
           servicesTitle: "Co Nabízíme",
           service1Title: "Nábytek na míru",
@@ -491,28 +481,31 @@
             "Cena je stanovena individuálně podle rozsahu projektu a použitých materiálů.",
           workEyebrow: "Portfolio",
           workTitle: "Vybrané Projekty",
+          project1Label: "Projekt 01",
           project1Title: "Vestavěné skříně do ložnice",
           project1Text:
             "Dvě vestavěné skříně navržené do nik v novostavbě. Důraz byl kladen na maximální využití prostoru, čistý design a kvalitní materiály.",
           project1Meta:
-            "Lokalita: Praha 10<br />Rok: 2025<br />Materiály: Dubová dýha, laminovaná deska Egger",
+            "Praha 10 · 2025<br />Dubová dýha · Laminovaná deska Egger",
           project2Title: "Dubový schod do maringotky",
+          project2Label: "Projekt 02",
           project2Text:
             "Zakázkový dubový schod vyrobený pro novou maringotku na okraji lesa. Schod obsahuje úložný prostor pro boty.",
           project2Meta:
-            "Lokalita: Jevany<br />Rok: 2026<br />Materiály: Dubová spárovka 28 mm, smrková biodeska 19 mm",
+            "Jevany · 2026<br />Dubová spárovka 28 mm · Smrková biodeska 19 mm",
           project3Title: "Šatní skříň pro fyzioterapeutické centrum",
+          project3Label: "Projekt 03",
           project3Text:
             "Zakázková šatní skříň navržená tak, aby navazovala na stávající nábytek ve fyzioterapeutickém centru. Skříňky jsou určeny pro zaměstnance a mají uzamykatelná dvířka.",
           project3Meta:
-            "Lokalita: Praha - Vršovice<br />Rok: 2026<br />Materiály: Laminovaná deska Egger, kování Blum",
+            "Praha - Vršovice · 2026<br />Laminovaná deska Egger · Kování Blum",
           aboutEyebrow: "O ateliéru",
           aboutTitle:
             "AK WOOD je truhlářský atelier se sídlem v Praze zaměřený na zakázkový nábytek a interiérové prvky.",
           aboutText:
             "Ke každé realizaci přistupuji individuálně s důrazem na detail, kvalitní materiály a dlouhodobou funkčnost. Od první konzultace až po finální montáž se projektu věnuji osobně, aby byla zajištěna maximální kvalita provedení.",
           aboutFounder: "AK WOOD založil a provozuje Adam Krejčíř.",
-          processTitle: "Postup",
+          processTitle: "Jak probíhá spolupráce",
           process1:
             "Konzultace a zaměření - Osobní setkání pro pochopení prostoru, požadavků a možností řešení.",
           process2:
@@ -521,24 +514,9 @@
             "Výroba - Precizní výroba s důrazem na řemeslné zpracování a kvalitu materiálů.",
           process4:
             "Montáž - Profesionální montáž a finální doladění detailů na místě.",
-          testimonialsEyebrow: "Reference klientů",
-          testimonialsTitle: "Reference klientů",
-          testimonial1Text:
-            '"Skvělé řemeslné zpracování a velmi dobrá komunikace během celé zakázky."',
-          testimonial1Author: "- klient, Praha",
-          testimonial2Text:
-            '"Precizní provedení, čistá montáž a profesionální přístup."',
-          testimonial2Author: "- klient, Praha",
-          testimonial3Text:
-            '"Výsledek perfektně zapadl do interiéru a kvalita je výborná."',
-          testimonial3Author: "- klient, Praha",
-          valuesEyebrow: "Hodnoty",
-          valuesTitle: "Přístup Ke Každému Projektu",
-          value1: "Důraz na detail",
-          value2: "Kvalitní materiály",
-          value3: "Čisté provedení",
-          value4: "Spolehlivá komunikace",
-          value5: "Dlouhodobá životnost",
+          fitTitle: "Pro koho je zakázková výroba vhodná",
+          fitText:
+            "Zakázková výroba je vhodná pro klienty, kteří hledají řešení přizpůsobené konkrétnímu prostoru, kvalitní materiály a dlouhodobou životnost.",
           contactEyebrow: "Kontakt",
           contactTitle: "Kontakt / Poptávka projektu",
           contactText:
@@ -546,6 +524,8 @@
           contactCity: "Praha a okolí (Česká republika)",
           contactPerson: "Adam Krejčíř (Majitel) · AK WOOD s.r.o.",
           contactHours: "Pondělí - Pátek · 8:00 - 17:00",
+          contactHelper:
+            "Stačí stručně popsat projekt a pokud je to možné, přiložit rozměry, inspiraci nebo fotografie prostoru.",
           formNameLabel: "Jméno",
           formNamePlaceholder: "Vaše jméno",
           formEmailLabel: "E-mail",
@@ -567,6 +547,9 @@
       );
       const form = document.getElementById("contact-form");
       const formMessage = document.getElementById("form-message");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImage = document.getElementById("lightbox-img");
+      const projectPhotos = document.querySelectorAll(".project-photo");
 
       function applyLanguage(language) {
         translatableNodes.forEach((node) => {
@@ -598,6 +581,27 @@
         const current = document.documentElement.lang === "cs" ? "cs" : "en";
         const nextLanguage = current === "en" ? "cs" : "en";
         applyLanguage(nextLanguage);
+      });
+
+      projectPhotos.forEach((photo) => {
+        photo.addEventListener("click", () => {
+          lightboxImage.src = photo.src;
+          lightbox.classList.add("open");
+        });
+      });
+
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+          lightbox.classList.remove("open");
+          lightboxImage.src = "";
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox.classList.contains("open")) {
+          lightbox.classList.remove("open");
+          lightboxImage.src = "";
+        }
       });
 
       form.addEventListener("submit", (event) => {
