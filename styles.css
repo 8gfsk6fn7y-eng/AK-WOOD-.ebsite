@@ -101,7 +101,7 @@ h3,
 }
 
 .hero {
-  padding: 5.8rem 0 4.2rem;
+  padding: 6.2rem 0 4.6rem;
 }
 
 .hero-grid {
@@ -122,8 +122,8 @@ h3,
 
 h1 {
   margin: 0;
-  font-size: clamp(2rem, 4.8vw, 4rem);
-  max-width: 20ch;
+  font-size: clamp(2rem, 4.2vw, 3.6rem);
+  max-width: 18ch;
 }
 
 h2 {
@@ -190,39 +190,7 @@ h2 {
 }
 
 .section {
-  padding: 3.8rem 0;
-}
-
-.stats {
-  padding-top: 0.6rem;
-}
-
-.stats-grid {
-  display: grid;
-  gap: 0.9rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.stat {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  padding: 1rem;
-}
-
-.stat-value {
-  margin: 0;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  color: var(--ink);
-  font-size: clamp(1.5rem, 4vw, 2.35rem);
-  font-weight: 700;
-}
-
-.stat-label {
-  margin: 0.1rem 0 0;
-  color: var(--muted);
-  font-size: 0.96rem;
+  padding: 4.6rem 0;
 }
 
 .section-alt {
@@ -231,11 +199,17 @@ h2 {
   border-bottom: 1px solid rgba(120, 86, 56, 0.12);
 }
 
-.cards,
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+}
+
 .project-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 2rem;
+  align-items: start;
 }
 
 .card,
@@ -252,18 +226,59 @@ h2 {
   margin: 0 0 0.45rem;
 }
 
+.project {
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.project.featured {
+  grid-column: span 2;
+}
+
+.project h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.project p {
+  margin: 0;
+}
+
 .project-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  display: block;
   border-radius: 10px;
-  margin-bottom: 0.7rem;
+}
+
+.project-media {
+  width: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.52);
+  border-radius: 10px;
+  border: 1px solid rgba(120, 86, 56, 0.1);
+  padding: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-photo-fallback {
+  display: none;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.project-media.is-missing .project-photo-fallback {
+  display: block;
 }
 
 .project-meta {
-  margin: 0.55rem 0 0;
+  margin-top: 0.8rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .split {
@@ -305,27 +320,6 @@ h2 {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 600;
-}
-
-.faq-list {
-  display: grid;
-  gap: 0.8rem;
-}
-
-.faq-item {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.62);
-  padding: 1rem;
-}
-
-.faq-item h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.faq-item p {
-  margin: 0.45rem 0 0;
 }
 
 .contact {
@@ -394,11 +388,18 @@ h2 {
 @media (max-width: 900px) {
   .hero-grid,
   .split,
-  .stats-grid,
   .cards,
-  .project-grid,
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .project.featured {
+    grid-column: auto;
   }
 
   .hero {

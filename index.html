@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AK WOOD | Custom Woodworking</title>
+    <meta
+      name="description"
+      content="Zakázkový nábytek na míru v Praze. Vestavné skříně, kuchyně a interiérové prvky vyrobené s důrazem na detail, kvalitní materiály a precizní řemeslné zpracování."
+    />
+    <title>AK WOOD | Nábytek na míru Praha</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,7 +16,7 @@
         <a class="logo" href="#home">AK WOOD</a>
         <nav class="site-nav" aria-label="Main Navigation">
           <a href="#services" data-i18n="navServices">Services</a>
-          <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#work" data-i18n="navWork">Portfolio</a>
           <a href="#about" data-i18n="navAbout">About</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
@@ -26,8 +30,8 @@
           <div>
             <p class="eyebrow" data-i18n="heroEyebrow">Custom Craftsmanship</p>
             <h1 data-i18n="heroTitle">
-              Bespoke furniture atelier in Prague focused on craftsmanship,
-              detail and long-term quality.
+              Bespoke furniture atelier in Prague. Craftsmanship, precision and
+              quality materials.
             </h1>
             <p class="lead" data-i18n="heroLead">
               AK WOOD is led by Adam Krejčíř. Every project is designed,
@@ -125,13 +129,19 @@
           <p class="eyebrow" data-i18n="workEyebrow">Selected Work</p>
           <h2 data-i18n="workTitle">Portfolio Projects</h2>
           <div class="project-grid">
-            <article class="project">
-              <img
-                class="project-photo"
-                src="assets/portfolio/wardrobe-bedroom-1.jpg"
-                alt="Built-in bedroom wardrobe project"
-                loading="lazy"
-              />
+            <article class="project featured">
+              <div class="project-media">
+                <img
+                  class="project-photo"
+                  src="assets/portfolio/wardrobe-bedroom-1.jpg"
+                  alt="Built-in oak veneer wardrobes fitted into bedroom niches in Prague 10"
+                  loading="lazy"
+                  onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
+                />
+                <div class="project-photo-fallback" aria-hidden="true">
+                  Portfolio image unavailable
+                </div>
+              </div>
               <h3 data-i18n="project1Title">Built-in Bedroom Wardrobes</h3>
               <p data-i18n="project1Text">
                 Two built-in wardrobes designed for niches in a newly built
@@ -139,16 +149,24 @@
                 design and quality materials.
               </p>
               <p class="project-meta" data-i18n="project1Meta">
-                Prague 10 · 2025 · Oak veneer, Egger laminated board
+                Location: Prague 10<br />
+                Year: 2025<br />
+                Materials: Oak veneer, Egger laminated board
               </p>
             </article>
             <article class="project">
-              <img
-                class="project-photo"
-                src="assets/portfolio/tomas_schod.jpg"
-                alt="Oak step for tiny house project"
-                loading="lazy"
-              />
+              <div class="project-media">
+                <img
+                  class="project-photo"
+                  src="assets/portfolio/tomas_schod.jpg"
+                  alt="Custom solid oak step with integrated shoe storage for a tiny house in Jevany"
+                  loading="lazy"
+                  onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
+                />
+                <div class="project-photo-fallback" aria-hidden="true">
+                  Portfolio image unavailable
+                </div>
+              </div>
               <h3 data-i18n="project2Title">Oak Step for a Tiny House</h3>
               <p data-i18n="project2Text">
                 Custom oak step built for a newly installed tiny house located
@@ -156,16 +174,24 @@
                 space for shoes.
               </p>
               <p class="project-meta" data-i18n="project2Meta">
-                Jevany · 2026 · Solid oak panel 28 mm, spruce bioboard 19 mm
+                Location: Jevany<br />
+                Year: 2026<br />
+                Materials: Solid oak panel 28 mm, spruce bioboard 19 mm
               </p>
             </article>
             <article class="project">
-              <img
-                class="project-photo"
-                src="assets/portfolio/CKP-1.jpg"
-                alt="Staff wardrobe for physiotherapy center project"
-                loading="lazy"
-              />
+              <div class="project-media">
+                <img
+                  class="project-photo"
+                  src="assets/portfolio/CKP-1.jpg"
+                  alt="Staff wardrobe with lockable doors made for a physiotherapy center in Prague Vrsovice"
+                  loading="lazy"
+                  onerror="this.closest('.project-media').classList.add('is-missing'); this.remove();"
+                />
+                <div class="project-photo-fallback" aria-hidden="true">
+                  Portfolio image unavailable
+                </div>
+              </div>
               <h3 data-i18n="project3Title">
                 Staff Wardrobe for Physiotherapy Center
               </h3>
@@ -175,7 +201,42 @@
                 include lockable doors.
               </p>
               <p class="project-meta" data-i18n="project3Meta">
-                Prague - Vršovice · 2026 · Egger laminated board, Blum hardware
+                Location: Prague - Vršovice<br />
+                Year: 2026<br />
+                Materials: Egger laminated board, Blum hardware
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <p class="eyebrow" data-i18n="testimonialsEyebrow">Client References</p>
+          <h2 data-i18n="testimonialsTitle">Client References</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial">
+              <p data-i18n="testimonial1Text">
+                "Excellent craftsmanship and smooth communication throughout the project."
+              </p>
+              <p class="testimonial-author" data-i18n="testimonial1Author">
+                - Client, Prague
+              </p>
+            </article>
+            <article class="testimonial">
+              <p data-i18n="testimonial2Text">
+                "Precise execution, clean installation and a calm, professional approach."
+              </p>
+              <p class="testimonial-author" data-i18n="testimonial2Author">
+                - Client, Prague
+              </p>
+            </article>
+            <article class="testimonial">
+              <p data-i18n="testimonial3Text">
+                "The result fits our interior perfectly and the quality is excellent."
+              </p>
+              <p class="testimonial-author" data-i18n="testimonial3Author">
+                - Client, Prague
               </p>
             </article>
           </div>
@@ -194,6 +255,9 @@
               materials and long-term functionality. From the first
               consultation to the final installation, Adam Krejčíř handles the
               work personally to ensure quality and precision.
+            </p>
+            <p data-i18n="aboutFounder">
+              AK WOOD is founded and operated by Adam Krejčíř.
             </p>
           </div>
           <div class="process">
@@ -274,14 +338,14 @@
     <script>
       const translations = {
         en: {
-          pageTitle: "AK WOOD | Bespoke Furniture Atelier",
+          pageTitle: "AK WOOD | Bespoke Furniture Prague",
           navServices: "Services",
           navWork: "Portfolio",
           navAbout: "About",
           navContact: "Contact",
           heroEyebrow: "Bespoke Woodworking Atelier",
           heroTitle:
-            "Bespoke furniture atelier in Prague focused on craftsmanship, detail and long-term quality.",
+            "Bespoke furniture atelier in Prague. Craftsmanship, precision and quality materials.",
           heroLead:
             "AK WOOD is led by Adam Krejčíř. Every project is designed, produced and installed with care.",
           heroCta1: "Project inquiry",
@@ -320,22 +384,24 @@
           project1Title: "Built-in Bedroom Wardrobes",
           project1Text:
             "Two built-in wardrobes designed for niches in a newly built apartment. The project focused on efficient use of space, clean design and quality materials.",
-          project1Meta: "Prague 10 · 2025 · Oak veneer, Egger laminated board",
+          project1Meta:
+            "Location: Prague 10<br />Year: 2025<br />Materials: Oak veneer, Egger laminated board",
           project2Title: "Oak Step for a Tiny House",
           project2Text:
             "Custom oak step built for a newly installed tiny house located on the edge of a forest. The step includes integrated storage space for shoes.",
           project2Meta:
-            "Jevany · 2026 · Solid oak panel 28 mm, spruce bioboard 19 mm",
+            "Location: Jevany<br />Year: 2026<br />Materials: Solid oak panel 28 mm, spruce bioboard 19 mm",
           project3Title: "Staff Wardrobe for Physiotherapy Center",
           project3Text:
             "Custom wardrobe designed to match the existing furniture in a physiotherapy center. The lockers are intended for staff and include lockable doors.",
           project3Meta:
-            "Prague - Vršovice · 2026 · Egger laminated board, Blum hardware",
+            "Location: Prague - Vršovice<br />Year: 2026<br />Materials: Egger laminated board, Blum hardware",
           aboutEyebrow: "About",
           aboutTitle:
             "AK WOOD is a custom woodworking atelier based in Prague focused on bespoke furniture and interior elements.",
           aboutText:
             "Each project is approached individually with attention to detail, materials and long-term functionality. From the first consultation to the final installation, the work is handled personally by Adam Krejčíř to ensure quality and precision.",
+          aboutFounder: "AK WOOD is founded and operated by Adam Krejčíř.",
           processTitle: "Process",
           process1:
             "Consultation and measurement - Initial meeting to understand the space, requirements and possibilities of the project.",
@@ -345,6 +411,17 @@
             "Production - Precise production with emphasis on craftsmanship and material quality.",
           process4:
             "Installation - Professional installation and final adjustments directly on site.",
+          testimonialsEyebrow: "Client References",
+          testimonialsTitle: "Client References",
+          testimonial1Text:
+            '"Excellent craftsmanship and smooth communication throughout the project."',
+          testimonial1Author: "- Client, Prague",
+          testimonial2Text:
+            '"Precise execution, clean installation and a calm, professional approach."',
+          testimonial2Author: "- Client, Prague",
+          testimonial3Text:
+            '"The result fits our interior perfectly and the quality is excellent."',
+          testimonial3Author: "- Client, Prague",
           valuesEyebrow: "Values",
           valuesTitle: "How We Approach Every Project",
           value1: "Attention to detail",
@@ -372,19 +449,19 @@
           footerText: "\u00a9 2026 AK WOOD s.r.o."
         },
         cs: {
-          pageTitle: "AK WOOD | Truhlářský atelier Praha",
+          pageTitle: "AK WOOD | Nábytek na míru Praha",
           navServices: "Služby",
           navWork: "Portfolio",
           navAbout: "O ateliéru",
           navContact: "Kontakt",
           heroEyebrow: "Zakázkový nábytek",
           heroTitle:
-            "Truhlářský atelier v Praze zaměřený na zakázkový nábytek, precizní zpracování a kvalitní materiály.",
+            "Truhlářský atelier v Praze. Zakázkový nábytek s důrazem na detail a kvalitní materiály.",
           heroLead:
             "AK WOOD vede Adam Krejčíř. Každý projekt řešíme od návrhu přes výrobu až po montáž.",
           heroCta1: "Nezávazná poptávka",
           heroCta2: "Zobrazit projekty",
-          heroCardTitle: "Jak Pracujeme",
+          heroCardTitle: "Jak pracujeme",
           heroPoint1: "Konzultace návrhu, zakázková výroba, profesionální montáž",
           heroPoint2: "Důraz na detail a čisté provedení",
           heroPoint3: "Cena individuálně podle rozsahu a materiálů",
@@ -417,22 +494,24 @@
           project1Title: "Vestavěné skříně do ložnice",
           project1Text:
             "Dvě vestavěné skříně navržené do nik v novostavbě. Důraz byl kladen na maximální využití prostoru, čistý design a kvalitní materiály.",
-          project1Meta: "Praha 10 · 2025 · Dubová dýha, laminovaná deska Egger",
+          project1Meta:
+            "Lokalita: Praha 10<br />Rok: 2025<br />Materiály: Dubová dýha, laminovaná deska Egger",
           project2Title: "Dubový schod do maringotky",
           project2Text:
             "Zakázkový dubový schod vyrobený pro novou maringotku na okraji lesa. Schod obsahuje úložný prostor pro boty.",
           project2Meta:
-            "Jevany · 2026 · Dubová spárovka 28 mm, smrková biodeska 19 mm",
+            "Lokalita: Jevany<br />Rok: 2026<br />Materiály: Dubová spárovka 28 mm, smrková biodeska 19 mm",
           project3Title: "Šatní skříň pro fyzioterapeutické centrum",
           project3Text:
             "Zakázková šatní skříň navržená tak, aby navazovala na stávající nábytek ve fyzioterapeutickém centru. Skříňky jsou určeny pro zaměstnance a mají uzamykatelná dvířka.",
           project3Meta:
-            "Praha - Vršovice · 2026 · Laminovaná deska Egger, kování Blum",
+            "Lokalita: Praha - Vršovice<br />Rok: 2026<br />Materiály: Laminovaná deska Egger, kování Blum",
           aboutEyebrow: "O ateliéru",
           aboutTitle:
             "AK WOOD je truhlářský atelier se sídlem v Praze zaměřený na zakázkový nábytek a interiérové prvky.",
           aboutText:
             "Ke každé realizaci přistupuji individuálně s důrazem na detail, kvalitní materiály a dlouhodobou funkčnost. Od první konzultace až po finální montáž se projektu věnuji osobně, aby byla zajištěna maximální kvalita provedení.",
+          aboutFounder: "AK WOOD založil a provozuje Adam Krejčíř.",
           processTitle: "Postup",
           process1:
             "Konzultace a zaměření - Osobní setkání pro pochopení prostoru, požadavků a možností řešení.",
@@ -442,6 +521,17 @@
             "Výroba - Precizní výroba s důrazem na řemeslné zpracování a kvalitu materiálů.",
           process4:
             "Montáž - Profesionální montáž a finální doladění detailů na místě.",
+          testimonialsEyebrow: "Reference klientů",
+          testimonialsTitle: "Reference klientů",
+          testimonial1Text:
+            '"Skvělé řemeslné zpracování a velmi dobrá komunikace během celé zakázky."',
+          testimonial1Author: "- klient, Praha",
+          testimonial2Text:
+            '"Precizní provedení, čistá montáž a profesionální přístup."',
+          testimonial2Author: "- klient, Praha",
+          testimonial3Text:
+            '"Výsledek perfektně zapadl do interiéru a kvalita je výborná."',
+          testimonial3Author: "- klient, Praha",
           valuesEyebrow: "Hodnoty",
           valuesTitle: "Přístup Ke Každému Projektu",
           value1: "Důraz na detail",
@@ -482,7 +572,11 @@
         translatableNodes.forEach((node) => {
           const key = node.dataset.i18n;
           if (translations[language][key]) {
-            node.textContent = translations[language][key];
+            if (node.classList.contains("project-meta")) {
+              node.innerHTML = translations[language][key];
+            } else {
+              node.textContent = translations[language][key];
+            }
           }
         });
         translatablePlaceholders.forEach((node) => {
