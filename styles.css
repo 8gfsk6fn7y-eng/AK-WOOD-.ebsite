@@ -123,7 +123,7 @@ h3,
 h1 {
   margin: 0;
   font-size: clamp(2rem, 4.8vw, 4rem);
-  max-width: 14ch;
+  max-width: 20ch;
 }
 
 h2 {
@@ -250,6 +250,20 @@ h2 {
 .card h3,
 .project h3 {
   margin: 0 0 0.45rem;
+}
+
+.project-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+
+.project-meta {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .split {
