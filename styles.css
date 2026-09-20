@@ -575,28 +575,6 @@ h3 {
   margin: 0;
 }
 
-.location-list {
-  align-self: stretch;
-  padding: 1.25rem;
-  background: #f4f6f1;
-  border: 1px solid rgba(93, 107, 85, 0.2);
-  border-radius: var(--radius);
-}
-
-.location-list p {
-  color: var(--brand-dark);
-  font-weight: 700;
-  margin-bottom: 0.7rem;
-}
-
-.location-list ul {
-  display: grid;
-  gap: 0.55rem;
-  margin: 0;
-  padding-left: 1.1rem;
-  color: var(--muted);
-}
-
 .contact p {
   margin: 0.35rem 0;
 }
