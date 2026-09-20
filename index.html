@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="AK WOOD je truhlářský atelier v Praze zaměřený na zakázkový nábytek, vestavěné skříně a interiérové prvky s důrazem na detail a kvalitní materiály."
+      content="AK WOOD je truhlářství v Praze 6 - Bubenči. Vyrábíme zakázkový nábytek, vestavěné skříně, kuchyně a interiérové prvky na míru."
     />
-    <title>AK WOOD – zakázkový nábytek Praha | truhlářský atelier</title>
+    <title>AK WOOD - truhlář Praha 6 | zakázkový nábytek na míru</title>
     <link rel="icon" href="/assets/favicon.svg" />
     <script type="application/ld+json">
       {
@@ -15,15 +15,18 @@
         "@type": "LocalBusiness",
         "name": "AK WOOD s.r.o.",
         "image": "/assets/logo/ak-wood-logo.svg",
-        "url": "https://your-domain.cz",
+        "url": "https://www.akwood.cz",
         "telephone": "+420773565100",
         "email": "ad.krejcir@gmail.com",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Praha 6 - Bubeneč",
           "addressLocality": "Praha",
+          "addressRegion": "Praha 6",
           "addressCountry": "CZ"
         },
-        "areaServed": "Prague",
+        "areaServed": ["Praha 6", "Bubeneč", "Praha", "Středočeský kraj"],
+        "priceRange": "$$",
         "founder": {
           "@type": "Person",
           "name": "Adam Krejčíř"
@@ -43,6 +46,7 @@
           <a href="#services" data-i18n="navServices">Services</a>
           <a href="#work" data-i18n="navWork">Portfolio</a>
           <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#location" data-i18n="navLocation">Location</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
         <button id="lang-toggle" class="lang-toggle" type="button">CZ</button>
@@ -75,6 +79,32 @@
               >
             </div>
           </div>
+          <div class="hero-panel" aria-label="AK WOOD overview">
+            <img
+              src="assets/portfolio/wardrobe-bedroom-1.jpg"
+              alt="Zakázková vestavěná skříň od AK WOOD"
+            />
+            <div class="hero-panel-meta">
+              <p data-i18n="heroPanelTitle">Workshop in Praha 6 - Bubeneč</p>
+              <span data-i18n="heroPanelText"
+                >Custom furniture, kitchens, wardrobes and interior details.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container proof-strip" aria-label="AK WOOD highlights">
+          <div>
+            <strong data-i18n="proof1Title">Praha 6 - Bubeneč</strong>
+            <span data-i18n="proof1Text">local workshop and personal approach</span>
+          </div>
+          <div>
+            <strong data-i18n="proof2Title">Made to measure</strong>
+            <span data-i18n="proof2Text">design, production and installation</span>
+          </div>
+          <div>
+            <strong data-i18n="proof3Title">Quality materials</strong>
+            <span data-i18n="proof3Text">Egger, Blum, veneer and solid wood</span>
+          </div>
         </div>
       </section>
 
@@ -82,6 +112,10 @@
         <div class="container">
           <p class="eyebrow" data-i18n="servicesEyebrow">Services</p>
           <h2 data-i18n="servicesTitle">What We Offer</h2>
+          <p class="section-intro" data-i18n="servicesIntro">
+            Practical custom woodworking for apartments, homes and commercial
+            interiors in Prague.
+          </p>
           <div class="cards">
             <article class="card">
               <h3 data-i18n="service1Title">Custom Furniture</h3>
@@ -142,6 +176,10 @@
         <div class="container">
           <p class="eyebrow" data-i18n="workEyebrow">Selected Work</p>
           <h2 data-i18n="workTitle">Portfolio Projects</h2>
+          <p class="section-intro" data-i18n="workIntro">
+            A compact selection of built work. More project photos can be added
+            as the portfolio grows.
+          </p>
           <div class="project-grid">
             <article class="project">
               <div class="project-media project-media--double">
@@ -251,6 +289,10 @@
             <p data-i18n="aboutFounder">
               AK WOOD is founded and operated by Adam Krejčíř.
             </p>
+            <p class="local-note" data-i18n="aboutLocal">
+              The workshop is based in Praha 6 - Bubeneč, with projects across
+              Prague and nearby areas.
+            </p>
           </div>
           <div class="process">
             <h3 data-i18n="processTitle">Our Process</h3>
@@ -276,6 +318,28 @@
             tailored to a specific space, quality materials and long-term
             durability.
           </p>
+        </div>
+      </section>
+
+      <section id="location" class="section location">
+        <div class="container split">
+          <div>
+            <p class="eyebrow" data-i18n="locationEyebrow">Location</p>
+            <h2 data-i18n="locationTitle">Truhlářství Praha 6 - Bubeneč</h2>
+            <p data-i18n="locationText">
+              AK WOOD is based in Praha 6 - Bubeneč. For local clients, this
+              means easier consultation, measurement and installation across
+              Prague 6 and the wider city.
+            </p>
+          </div>
+          <div class="location-list">
+            <p data-i18n="locationAreaTitle">Typical service area</p>
+            <ul>
+              <li data-i18n="locationArea1">Praha 6 - Bubeneč, Dejvice, Břevnov</li>
+              <li data-i18n="locationArea2">Prague apartments and family homes</li>
+              <li data-i18n="locationArea3">Custom interiors in Prague and nearby towns</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -344,22 +408,34 @@
     <script>
       const translations = {
         en: {
-          pageTitle: "AK WOOD – zakázkový nábytek Praha | truhlářský atelier",
+          pageTitle: "AK WOOD - carpenter Prague 6 | custom furniture",
           navServices: "Services",
           navWork: "Portfolio",
           navAbout: "About",
+          navLocation: "Location",
           navContact: "Contact",
-          heroEyebrow: "Bespoke Woodworking Atelier",
+          heroEyebrow: "Custom furniture · Prague 6",
           heroTitle:
-            "Bespoke furniture atelier in Prague. Craftsmanship, precision and quality materials.",
+            "Custom woodworking atelier in Prague 6 for furniture made precisely to fit.",
           heroLead:
-            "AK WOOD is led by Adam Krejčíř. Every project is designed, produced and installed with care.",
+            "AK WOOD creates built-in wardrobes, kitchens, storage, tables and interior elements with a focus on detail, durable materials and clean installation.",
           heroPractical:
-            "Prague and surrounding area · design consultation, production, installation",
+            "Praha 6 - Bubeneč · consultation, production, installation",
           heroCta1: "Project inquiry",
           heroCta2: "View projects",
+          heroPanelTitle: "Workshop in Praha 6 - Bubeneč",
+          heroPanelText:
+            "Custom furniture, kitchens, wardrobes and interior details.",
+          proof1Title: "Praha 6 - Bubeneč",
+          proof1Text: "local workshop and personal approach",
+          proof2Title: "Made to measure",
+          proof2Text: "design, production and installation",
+          proof3Title: "Quality materials",
+          proof3Text: "Egger, Blum, veneer and solid wood",
           servicesEyebrow: "Services",
           servicesTitle: "What We Offer",
+          servicesIntro:
+            "Practical custom woodworking for apartments, homes and commercial interiors in Prague.",
           service1Title: "Custom furniture",
           service1Text:
             "Bespoke furniture designed and built to fit the space precisely, with a focus on craftsmanship, materials and long-term durability.",
@@ -384,6 +460,8 @@
             "Custom quote based on project scope and materials.",
           workEyebrow: "Portfolio",
           workTitle: "Selected Projects",
+          workIntro:
+            "A compact selection of built work. More project photos can be added as the portfolio grows.",
           project1Label: "Project 01",
           project1Title: "Built-in Bedroom Wardrobes",
           project1Text:
@@ -408,6 +486,8 @@
           aboutText:
             "Each project is approached individually with attention to detail, materials and long-term functionality. From the first consultation to the final installation, the work is handled personally by Adam Krejčíř to ensure quality and precision.",
           aboutFounder: "AK WOOD is founded and operated by Adam Krejčíř.",
+          aboutLocal:
+            "The workshop is based in Praha 6 - Bubeneč, with projects across Prague and nearby areas.",
           processTitle: "How the collaboration works",
           process1:
             "Consultation and measurement - Initial meeting to understand the space, requirements and possibilities of the project.",
@@ -420,11 +500,19 @@
           fitTitle: "Who custom production is for",
           fitText:
             "Custom production is ideal for clients looking for furniture tailored to a specific space, quality materials and long-term durability.",
+          locationEyebrow: "Location",
+          locationTitle: "Woodworking atelier in Praha 6 - Bubeneč",
+          locationText:
+            "AK WOOD is based in Praha 6 - Bubeneč. For local clients, this means easier consultation, measurement and installation across Prague 6 and the wider city.",
+          locationAreaTitle: "Typical service area",
+          locationArea1: "Praha 6 - Bubeneč, Dejvice, Břevnov",
+          locationArea2: "Prague apartments and family homes",
+          locationArea3: "Custom interiors in Prague and nearby towns",
           contactEyebrow: "Contact",
           contactTitle: "Contact / Project Inquiry",
           contactText:
             "If you have an idea for a project or would like to discuss possibilities, feel free to get in touch. I will be happy to review your request and discuss the next steps.",
-          contactCity: "Prague and surrounding area (Czech Republic)",
+          contactCity: "Praha 6 - Bubeneč and surrounding area",
           contactPerson: "Adam Krejčíř (Owner) · AK WOOD s.r.o.",
           contactHours: "Monday - Friday · 8:00 - 17:00",
           contactHelper:
@@ -442,21 +530,33 @@
           footerText: "\u00a9 2026 AK WOOD s.r.o."
         },
         cs: {
-          pageTitle: "AK WOOD – zakázkový nábytek Praha | truhlářský atelier",
+          pageTitle: "AK WOOD - truhlář Praha 6 | zakázkový nábytek na míru",
           navServices: "Služby",
           navWork: "Portfolio",
           navAbout: "O ateliéru",
+          navLocation: "Lokalita",
           navContact: "Kontakt",
-          heroEyebrow: "Zakázkový nábytek",
+          heroEyebrow: "Zakázkový nábytek · Praha 6",
           heroTitle:
-            "Truhlářský atelier v Praze. Zakázkový nábytek s důrazem na detail a kvalitní materiály.",
+            "Truhlářství v Praze 6 pro nábytek na míru, který přesně sedí prostoru.",
           heroLead:
-            "AK WOOD vede Adam Krejčíř. Každý projekt řešíme od návrhu přes výrobu až po montáž.",
-          heroPractical: "Praha a okolí · konzultace, výroba, montáž",
+            "AK WOOD vyrábí vestavěné skříně, kuchyně, úložné sestavy, stoly a interiérové prvky s důrazem na detail, kvalitní materiály a čistou montáž.",
+          heroPractical: "Praha 6 - Bubeneč · konzultace, výroba, montáž",
           heroCta1: "Nezávazná poptávka",
           heroCta2: "Zobrazit projekty",
+          heroPanelTitle: "Dílna v Praze 6 - Bubenči",
+          heroPanelText:
+            "Nábytek na míru, kuchyně, skříně a interiérové detaily.",
+          proof1Title: "Praha 6 - Bubeneč",
+          proof1Text: "lokální dílna a osobní přístup",
+          proof2Title: "Výroba na míru",
+          proof2Text: "návrh, výroba a montáž",
+          proof3Title: "Kvalitní materiály",
+          proof3Text: "Egger, Blum, dýha a masiv",
           servicesEyebrow: "Služby",
-          servicesTitle: "Co Nabízíme",
+          servicesTitle: "Co nabízím",
+          servicesIntro:
+            "Praktická zakázková výroba pro byty, domy i komerční interiéry v Praze.",
           service1Title: "Nábytek na míru",
           service1Text:
             "Zakázkový nábytek navržený a vyrobený přesně podle prostoru s důrazem na řemeslné zpracování, kvalitní materiály a dlouhou životnost.",
@@ -480,7 +580,9 @@
           servicesPricing:
             "Cena je stanovena individuálně podle rozsahu projektu a použitých materiálů.",
           workEyebrow: "Portfolio",
-          workTitle: "Vybrané Projekty",
+          workTitle: "Vybrané realizace",
+          workIntro:
+            "Ukázka hotových prací. Další fotografie realizací lze průběžně doplňovat do portfolia.",
           project1Label: "Projekt 01",
           project1Title: "Vestavěné skříně do ložnice",
           project1Text:
@@ -505,6 +607,8 @@
           aboutText:
             "Ke každé realizaci přistupuji individuálně s důrazem na detail, kvalitní materiály a dlouhodobou funkčnost. Od první konzultace až po finální montáž se projektu věnuji osobně, aby byla zajištěna maximální kvalita provedení.",
           aboutFounder: "AK WOOD založil a provozuje Adam Krejčíř.",
+          aboutLocal:
+            "Dílna sídlí v Praze 6 - Bubenči a realizace probíhají po celé Praze a okolí.",
           processTitle: "Jak probíhá spolupráce",
           process1:
             "Konzultace a zaměření - Osobní setkání pro pochopení prostoru, požadavků a možností řešení.",
@@ -517,11 +621,19 @@
           fitTitle: "Pro koho je zakázková výroba vhodná",
           fitText:
             "Zakázková výroba je vhodná pro klienty, kteří hledají řešení přizpůsobené konkrétnímu prostoru, kvalitní materiály a dlouhodobou životnost.",
+          locationEyebrow: "Lokalita",
+          locationTitle: "Truhlář Praha 6 - Bubeneč",
+          locationText:
+            "AK WOOD sídlí v Praze 6 - Bubenči. Pro místní klienty to znamená jednodušší konzultaci, zaměření i montáž po Praze 6 a v dalších částech Prahy.",
+          locationAreaTitle: "Obvyklá oblast realizací",
+          locationArea1: "Praha 6 - Bubeneč, Dejvice, Břevnov",
+          locationArea2: "Pražské byty a rodinné domy",
+          locationArea3: "Interiéry na míru v Praze a okolí",
           contactEyebrow: "Kontakt",
           contactTitle: "Kontakt / Poptávka projektu",
           contactText:
             "Pokud máte představu o projektu nebo chcete probrat možnosti řešení, neváhejte mě kontaktovat. Rád se podívám na vaši poptávku a domluvíme další postup.",
-          contactCity: "Praha a okolí (Česká republika)",
+          contactCity: "Praha 6 - Bubeneč a okolí",
           contactPerson: "Adam Krejčíř (Majitel) · AK WOOD s.r.o.",
           contactHours: "Pondělí - Pátek · 8:00 - 17:00",
           contactHelper:
